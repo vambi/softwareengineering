@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <script lang="javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homie</title>
+	
+    <link rel="stylesheet" type="text/css" href="changepin.css">
+ 
+	<style type="text/css">
+	</style>
+	<script lang="javascript">
+        $(document).ready(function(){
+            $('#berechnen').click(function(){
+                var a = $('#a').val();
+                var b = $('#b').val();
+                if(a==0000){
+                $('#ergebnis').html('Pin erfolgreich geändert!')
+                
+                }else{
+                $('#ergebnis').html('Pin konnte nicht geändert werden!')
+
+                }
+             })
+
+
+        })
+
+
+	
+      
+
+    </script>
+ 
+	</head>
+<body>
+    <div class="content" style="left: -57px; top: 20px; width: 100%;">
+    <div class="logo">HOMIE-LOGO</div>
+    <div class="pin" style="height: 80%; width: 85%;">
+         
+             <h1 class="auto-style3" style="width: 202px">
+			 <span lang="de" class="auto-style4" >Pin ändern</span>
+			 </h1>
+		 
+		 
+    		 <table class="table"style="width: 30%">
+				 <tr>
+					 <td style="width: 115px" class="auto-style7">Alte Pin</td>
+					 <td class="auto-style9"><input type="text" id="a"></td>
+				 </tr>
+				 <tr>
+					 <td style="width: 115px" class="auto-style9">
+					 <span lang="de" class="auto-style6">Neue Pin</span></td>
+					 <td class="auto-style9"><input type="text" id="b"></td>
+				 </tr>
+				 <tr>
+					 <td style="width: 115px" class="auto-style9">
+					 <span lang="de" class="auto-style6">Status</span></td>
+					 <td class="auto-style9"><p id="ergebnis"></p></td>
+				 </tr>
+				 <tr>
+					 <td style="width: 115px" class="auto-style9"><input type="button" id="berechnen" value="Ändern" class="button" ></td>
+					 <td class="auto-style9">&nbsp;</td>
+				 </tr>
+			 </table>
+		 
+		 
+    </div>
+    </div>
+   
+</body>
+</html>

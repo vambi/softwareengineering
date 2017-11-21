@@ -1,0 +1,88 @@
+﻿html{overflow: hidden;}
+.content{
+    position: absolute;
+    background: linear-gradient(#c1c1c1, lightblue);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+}
+
+.logo{
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.menu{
+    position: absolute;
+    top: 150px;
+    left: 5vw;
+    width: 90vw;
+    height: 80%;
+}
+.auto-style3 {
+     height:10%;
+	margin-left: 10%;
+}
+
+
+.menu-item{
+    position: relative;
+    margin-left: 0px;
+    margin-top: 5%;
+    width: 100%;
+    height: 18%;
+    background-color: #57bff9;
+    line-height: 80px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    box-shadow: 4px 4px 10px grey;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.pin{
+	margin-left: 30%;
+}
+.auto-style4 {
+	font-size: xx-large;
+}
+.auto-style6 {
+	font-size: x-large;
+}
+.auto-style7 {
+	font-size: x-large;
+	border-style: solid;
+	border-width: 1px;
+}
+.auto-style8 {
+	border-width: 0px;
+	height: 50%;
+	margin-left: 10%;
+}
+.auto-style9 {
+	border-style: solid;
+	border-width: 1px;
+}
+.table{
+    height:50%;
+	margin-left: 10%;
+}
+.button{
+	width:90%;
+	height:90%;
+}
+input[type=text]{
+    width:90%;
+    height:90%;
+    border:1px solid #cfcbce;
+    font-size: x-large;
+
+}

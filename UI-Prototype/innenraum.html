@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <script lang="javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homie</title>
+	
+    <link rel="stylesheet" type="text/css" href="innenraum.css">
+ 
+	<style type="text/css">
+	.auto-style5 {
+		border-style: solid;
+		border-width: 1px;
+	}
+	.auto-style6 {
+		border-width: 0px;
+		width: 40%;
+		height: 15%;
+		margin-left: 30%;
+	}
+	</style>
+ <script lang="javascript">
+        $(document).ready(function(){
+            $('#aktivieren').click(function(){
+                           var pin=000;
+                            pi=$('#b').val();
+                            if(pi==pin){
+                             $('#ergebnis').html('Alarm aktiviert!')                            
+                             }else{
+                            $('#ergebnis').html('Pin falsch')                            }
+                            
+                            
+                             })
+             $('#deaktivieren').click(function(){
+                           var pin=000;
+                            pi=$('#b').val();
+                            if(pi==pin){
+                             $('#ergebnis').html('Alarm deaktiviert!')
+                            }else{
+                            $('#ergebnis').html('Pin falsch!')
+                            }
+                            
+                            
+                             })
+
+              $('#speichern').click(function(){
+                           var pin=000;
+                            var pi=$('#b').val();
+                            var raum=$('#a').val();
+                            var rg=document.getElementById("rg");
+                            var zs=document.getElementById("rg");
+                            if(pi==pin){
+                             $('#ergebnis').html('Speichern erfolgreich')
+                            }
+                            else{
+                            $('#ergebnis').html('Eingaben überprüfen')
+                            }
+                            
+                            
+                             })
+
+
+
+
+        })
+
+
+	
+      
+
+    </script>
+
+</head>
+<body>
+    <div class="content">
+    <div class="logo">HOMIE-LOGO</div>
+    
+    <div class="innenraum">
+    
+    
+    
+    
+    	<span lang="de" class="auto-style1">InnenraumÜberwachung</span>
+    	<br>
+    	<br>
+    	<table class="table" >
+			<tr>
+				<td class="auto-style4" style="width: 142px">Raum ID</td>
+				<td class="auto-style4"><input type="text" id="a"></td>
+			</tr>
+			<tr>
+				<td class="auto-style4" style="width: 142px">Raum Gruppe</td>
+				<td class="auto-style4">
+				
+					<select name="Select1" id="rg">
+					<option>Keine</option>
+					<option>Gruppe 1</option>
+					<option>Gruppe 2</option>
+					<option>Erstellen</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="auto-style4" >Zeitschema</td>
+				<td class="auto-style4"><select name="Select2" id="zs">
+				    <option>Keines</option>
+					<option>Schema 1</option>
+					<option>Schema 2</option>
+					</select>
+</td>
+			</tr>
+			<tr>
+				<td class="auto-style4" style="width: 142px">PIN</td>
+				<td class="auto-style4"><input type="text" id="b"></td>
+			</tr>
+			<tr>
+				<td class="auto-style4" style="width: 142px">Status</td>
+				<td class="auto-style4"><p id="ergebnis"></p></td>
+			</tr>
+		</table>
+		<br>
+		<table class="table2">
+			<tr>
+				<td ><input type="button" id="speichern" value="speichern" class="button" ></td>
+				<td ><input type="button" id="aktivieren" value="aktivieren" class="button" ></td>
+				<td ><input type="button" id="deaktivieren" value="deaktivieren" class="button" ></td>
+			</tr>
+		</table>
+		
+		</div>
+    
+    
+    </div>
+    </body>
+</html>
