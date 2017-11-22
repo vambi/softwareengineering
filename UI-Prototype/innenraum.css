@@ -110,5 +110,7 @@ select{
 	font-size:large;
     font-family: "Calibri Light";
 
-
+}
+*:focus {
+    outline: none;
 }

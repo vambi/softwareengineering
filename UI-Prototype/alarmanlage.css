@@ -62,5 +62,7 @@
     font-family: "Calibri Light";
 
 }
-
+*:focus {
+    outline: none;
+}
 
