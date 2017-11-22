@@ -10,31 +10,43 @@
  
 	<style type="text/css">
 	</style>
-	<script lang="javascript">
+ <script lang="javascript">
         $(document).ready(function(){
             $('#aktivieren').click(function(){
-                           var pin=000;
-                            pi=prompt('Bitte Pin eingeben')
+                           var pin=1111;
+                            pi=$('#a').val();
                             if(pi==pin){
-                            alert('Alarm aktiviert!')
-                            }else{
-                            alert('Pin falsch')
-                            }
+                             $('#ergebnis').html('Alarm aktiviert!')                            
+                             }else{
+                            $('#ergebnis').html('Pin falsch !')                            }
                             
                             
                              })
              $('#deaktivieren').click(function(){
-                           var pin=000;
-                            pi=prompt('Bitte Pin eingeben')
+                           var pin=1111;
+                            pi=$('#a').val();
                             if(pi==pin){
-                            alert('Alarm deaktiviert!')
+                             $('#ergebnis').html('Alarm deaktiviert!')
                             }else{
-                            alert('Pin falsch')
+                            $('#ergebnis').html('Pin falsch !')
                             }
                             
                             
                              })
 
+              $('#speichern').click(function(){
+                           var pin=000;
+                            var pi=$('#a').val();
+                            
+                            if(pi==pin){
+                             $('#ergebnis').html('Speichern erfolgreich')
+                            }
+                            else{
+                            $('#ergebnis').html('Eingaben überprüfen')
+                            }
+                            
+                            
+                             })
 
 
 
@@ -47,19 +59,52 @@
 
     </script>
 
-	   
 </head>
 <body>
     <div class="content">
     <div class="logo">HOMIE-LOGO</div>
-    <div class="menu">
-         <div class="auto-style1">
-             <h1 class="auto-style2"><span lang="de">Tür- und Fensteralarm</span>
-		 </h1>
-		 </div>
-         <div class="menu-item"><input type="button" id="aktivieren" value="Aktivieren" class="button" ></div>
-        <div class="menu-item"><input type="button" id="deaktivieren" value="Deaktivieren" class="button" ></div>
-        </div>
-        </div>
-</body>
+    
+    <div class="innenraum">
+    
+    
+    
+    
+    	<span lang="de" class="auto-style7">Tür- und Fenster Überwachung</span>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<table class="table" >
+			<tr>
+				<td class="auto-style4" style="width: 142px">PIN</td>
+				<td class="auto-style4"><input type="text" id="a"></td>
+			</tr>
+						<tr>
+				<td class="auto-style4" >Zeitschema</td>
+				<td class="auto-style4"><select name="Select2" id="zs">
+				    <option>Keines</option>
+					<option>Schema 1</option>
+					<option>Schema 2</option>
+					</select>
+</td>
+			</tr>
+				<tr>
+				<td class="auto-style4" style="width: 142px">Status</td>
+				<td class="auto-style4"><p id="ergebnis"></p></td>
+			</tr>
+		</table>
+		<br>
+		<table class="table2">
+			<tr>
+				<td ><input type="button" id="speichern" value="speichern" class="button" ></td>
+				<td ><input type="button" id="aktivieren" value="einschalten" class="button" ></td>
+				<td ><input type="button" id="deaktivieren" value="auschalten" class="button" ></td>
+			</tr>
+		</table>
+		
+		</div>
+    
+    <input type="button" id="back" value="zurück" class="button" style="width: 11.5%; height: 5%;margin-left:41%" onclick="window.location.href='alarmanlage-main.html'">
+    </div>
+    </body>
 </html>

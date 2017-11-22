@@ -23,22 +23,22 @@
  <script lang="javascript">
         $(document).ready(function(){
             $('#aktivieren').click(function(){
-                           var pin=000;
+                           var pin=1111;
                             pi=$('#b').val();
                             if(pi==pin){
                              $('#ergebnis').html('Alarm aktiviert!')                            
                              }else{
-                            $('#ergebnis').html('Pin falsch')                            }
+                            $('#ergebnis').html('Pin falsch !')                            }
                             
                             
                              })
              $('#deaktivieren').click(function(){
-                           var pin=000;
+                           var pin=1111;
                             pi=$('#b').val();
                             if(pi==pin){
                              $('#ergebnis').html('Alarm deaktiviert!')
                             }else{
-                            $('#ergebnis').html('Pin falsch!')
+                            $('#ergebnis').html('Pin falsch !')
                             }
                             
                             
@@ -81,7 +81,7 @@
     
     
     
-    	<span lang="de" class="auto-style1">InnenraumÜberwachung</span>
+    	<span lang="de" class="auto-style1">Innenraum Überwachung</span>
     	<br>
     	<br>
     	<table class="table" >
@@ -123,14 +123,14 @@
 		<table class="table2">
 			<tr>
 				<td ><input type="button" id="speichern" value="speichern" class="button" ></td>
-				<td ><input type="button" id="aktivieren" value="aktivieren" class="button" ></td>
-				<td ><input type="button" id="deaktivieren" value="deaktivieren" class="button" ></td>
+				<td ><input type="button" id="aktivieren" value="einschalten" class="button" ></td>
+				<td ><input type="button" id="deaktivieren" value="auschalten" class="button" ></td>
 			</tr>
 		</table>
 		
 		</div>
     
-    
+    <input type="button" id="back" value="zurück" class="button" style="width: 11.5%; height: 5%;margin-left:41%"onclick="window.location.href='alarmanlage-main.html'" >
     </div>
     </body>
 </html>

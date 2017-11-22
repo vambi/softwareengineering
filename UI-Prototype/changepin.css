@@ -7,6 +7,8 @@
     overflow: hidden;
     top: 0px;
     left: 0px;
+    font-family: "Calibri Light";
+
 }
 
 .logo{
@@ -50,6 +52,9 @@
 }
 .pin{
 	margin-left: 30%;
+	height:50%; 
+	font-family: "Calibri Light";
+
 }
 .auto-style4 {
 	font-size: xx-large;
@@ -57,19 +62,10 @@
 .auto-style6 {
 	font-size: x-large;
 }
-.auto-style7 {
-	font-size: x-large;
-	border-style: solid;
-	border-width: 1px;
-}
 .auto-style8 {
 	border-width: 0px;
 	height: 50%;
 	margin-left: 10%;
-}
-.auto-style9 {
-	border-style: solid;
-	border-width: 1px;
 }
 .table{
     height:50%;
@@ -78,11 +74,27 @@
 .button{
 	width:90%;
 	height:90%;
+	background-color:#57bff9;
+	border-style:solid;
+	border-color:#cfcfcf;
+	position:relative;
+	border-radius: 10px;
+	padding:1px;
+	display: inline-block;
+	cursor: pointer; 
+	box-shadow: 4px 4px 10px grey;
+    font-family: "Calibri Light";
+
 }
 input[type=text]{
-    width:90%;
+    width:95%;
     height:90%;
     border:1px solid #cfcbce;
     font-size: x-large;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px grey;
+    font-size:large;
+    font-family: "Calibri Light";
+
 
 }

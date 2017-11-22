@@ -15,7 +15,7 @@
             $('#berechnen').click(function(){
                 var a = $('#a').val();
                 var b = $('#b').val();
-                if(a==0000){
+                if(a==1111){
                 $('#ergebnis').html('Pin erfolgreich geändert!')
                 
                 }else{
@@ -37,7 +37,7 @@
 <body>
     <div class="content" style="left: -57px; top: 20px; width: 100%;">
     <div class="logo">HOMIE-LOGO</div>
-    <div class="pin" style="height: 80%; width: 85%;">
+    <div class="pin" style="height: 50%; width: 85%;">
          
              <h1 class="auto-style3" style="width: 202px">
 			 <span lang="de" class="auto-style4" >Pin ändern</span>
@@ -46,7 +46,7 @@
 		 
     		 <table class="table"style="width: 30%">
 				 <tr>
-					 <td style="width: 115px" class="auto-style7">Alte Pin</td>
+					 <td style="width: 115px" class="auto-style6">Alte Pin</td>
 					 <td class="auto-style9"><input type="text" id="a"></td>
 				 </tr>
 				 <tr>
@@ -67,6 +67,7 @@
 		 
 		 
     </div>
+    <input type="button" id="back" value="zurück" class="button" style="width: 11.5%; height: 5%;margin-left:41%" onclick="window.location.href='alarmanlage-main.html'">
     </div>
    
 </body>
