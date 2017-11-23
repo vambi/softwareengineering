@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Beleuchtung - Manuell</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="logo">Beleuchtung - Manuell einstellen</div>
+        <div class="menu distancetop">
+           <div class="menu-list nohover">
+                <button onclick="dropdownmenuLeucht(value)" id="leuchtBtn" class="dropbtn halfwidth">Beleuchtung</button>
+                <div id="dropdownLeucht" class="dropdown-content">
+                    <div onclick="changeLightOne()">Leuchtkörper 1</div>
+                    <div onclick="changeLightTwo()">Leuchtkörper 2</div>
+                </div>
+                <button onclick="dropdownmenuStatus(value)" id="statusBtn" class="dropbtn halfwidth">Status</button>
+                <div id="dropdownStatus" class="dropdown-content">
+                    <div onclick="changeDropBtnStatus('Eingeschaltet')">Einschalten</div>
+                    <div onclick="changeDropBtnStatus('Ausgeschaltet')">Ausschalten</div>
+                    <div onclick="changeDropBtnStatus('Gedimmt')">Dimmen</div>
+                </div>
+            </div>
+            <div class="menu-item flow small " >
+                <div class="pseudobutton" onclick="linkBeleuchtung()">Einstellen</div>
+                <div class="pseudobutton" onclick="linkBeleuchtung()">Zurück</div>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
