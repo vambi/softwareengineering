@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Heizung</title>
+	
+    <link rel="stylesheet" type="text/css" href="heizungStyle.css">
+ 
+</head>
+<body>
+    <div class="view">
+        <div class="title">Heizung Manuel</div>
+        <div class="content">
+            <div class="core-content">
+                <div class="spalte">
+                    <div class="room-item" id="room-1">
+                        <div class="room-title">Raum 1</div>
+                        <input type="checkbox" class="power-check"><div class="checkbox-text">Ausschalten</div>
+                        <div class="room-scheme-item">
+                            <div class="room-scheme-time">Temperatur</div>
+                            <input type="range" class="slider" id="slider-room1" min="10" max="30" step="0.5" value="12.5">
+                            <div class="room-scheme-temp" id="out-room1">12.5°</div>
+                        </div>
+                    </div>
+                    <div class="room-item" id="room-3">
+                        <div class="room-title">Raum 3</div>
+                        <input type="checkbox" class="power-check"><div class="checkbox-text">Ausschalten</div>
+                        <div class="room-scheme-item">
+                            <div class="room-scheme-time">Temperatur</div>
+                            <input type="range" class="slider" id="slider-room3" min="10" max="30" step="0.5" value="21.5">
+                            <div class="room-scheme-temp" id="out-room3">21.5°</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spalte-right">
+                    <div class="room-item" id="room-2">
+                        <div class="room-title">Raum 2</div>
+                        <input type="checkbox" class="power-check"><div class="checkbox-text">Ausschalten</div>
+                        <div class="room-scheme-item">
+                            <div class="room-scheme-time">Temperatur</div>
+                            <input type="range" class="slider" id="slider-room2" min="10" max="30" step="0.5" value="20">
+                            <div class="room-scheme-temp" id="out-room2">20°</div>
+                        </div>
+                    </div>
+                    <div class="room-item" id="room-4">
+                        <div class="room-title">Raum 4</div>
+                        <input type="checkbox" class="power-check"><div class="checkbox-text">Ausschalten</div>
+                        <div class="room-scheme-item">
+                            <div class="room-scheme-time">Temperatur</div>
+                            <input type="range" class="slider" id="slider-room4" min="10" max="30" step="0.5" value="24">
+                            <div class="room-scheme-temp" id="out-room4">24°</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-menu">
+                <button class="bottom-button" onclick="window.location.href='heizung-main.html'">Speichern</button>
+                <button class="bottom-button" onclick="window.location.href='heizung-main.html'">Zurück</button>
+            </div>
+        </div>
+    </div>
+    <script src="heizung-manualJS.js"></script>
+</body>
+</html>

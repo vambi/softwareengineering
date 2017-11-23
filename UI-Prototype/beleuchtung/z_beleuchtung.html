@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Beleuchtung - Zeitschema</title>
+</head>
+
+<body onload="generate()">
+    <div class="content">
+        <div class="logo">Beleuchtung - Zeitschema einstellen</div>
+
+        <div class="menu">
+            <div class="weekdays  nohover" id="weekdays">
+                <ul>
+                    <li id="MO" class="selectedli weekday" onclick="changeMO()">MO</li>
+                    <li id="DI" class="weekday" onclick="changeDI()">DI</li>
+                    <li id="MI" class="weekday" onclick="changeMI()">MI</li>
+                    <li id="DO" class="weekday" onclick="changeDO()">DO</li>
+                    <li id="FR" class="weekday" onclick="changeFR()">FR</li>
+                    <li id="SA" class="weekday" onclick="changeSA()">SA</li>
+                    <li id="SO" class="weekday" onclick="changeSO()">SO</li>
+                </ul>
+            </div>
+            <div class="menu-list nohover">
+                <div class="dropdown">
+                    <button onclick="dropdownmenuZeit(value)" id="zeitBtn1" class="dropbtn full" value="1">Kein Zeitschema ausgewählt</button>
+                    <div id="dropdownZeit" class="dropdown-content">
+                        <div onclick="changeDropBtnTime('Zeitschema 1','1')">Zeitschema 1</div>
+                        <div onclick="changeDropBtnTime('Zeitschema 2','1')">Zeitschema 2</div>
+                        <div onclick="changeDropBtnTime('Kein Zeitschema ausgewählt','1')">Kein Zeitschema auswählen</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown" id="timestamps"></div>
+            <div class="menu-item small" onclick="addTimeStamp()">+</div>
+
+
+            <div class="dropdown hidden">
+                <button onclick="dropdownmenuLeucht(value)" id="leuchtBtn" class="dropbtn">Beleuchtung</button>
+                <div id="dropdownLeucht" class="dropdown-content">
+                    <div onclick="changeDropBtnLeucht('Leuchtkörper 1')">Leuchtkörper 1</div>
+                    <div onclick="changeDropBtnLeucht('Leuchtkörper 2')">Leuchtkörper 2</div>
+                </div>
+            </div>
+            <div class="dropdown hidden">
+                <button onclick="dropdownmenuStatus(value)" id="statusBtn" class="dropbtn">Status</button>
+                <div id="dropdownStatus" class="dropdown-content">
+                    <div onclick="changeDropBtnStatus('Einschalten')">Einschalten</div>
+                    <div onclick="changeDropBtnStatus('Ausschalten')">Ausschalten</div>
+                    <div onclick="changeDropBtnStatus('Dimmen')">Dimmen</div>
+                </div>
+            </div>
+            <div class="dropdown time hidden">
+                <button onclick="dropdownmenuStunden(value)" id="stundenBtn" class="dropbtn time">00</button>
+                <div id="dropdownStunden" class="dropdown-content">
+                </div>
+            </div>
+            <div class="dropdown time hidden">
+                <button onclick="dropdownmenuMin(value)" id="minBtn" class="dropbtn">00</button>
+                <div id="dropdownMin" class="dropdown-content">
+                </div>
+            </div>
+            <div class="menu-item flow small" >
+                <div class="pseudobutton" onclick="linkBeleuchtung()">Bestätigen</div>
+                <div class="pseudobutton" onclick="linkBeleuchtung()">Zurück</div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
