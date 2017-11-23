@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Heizung</title>
+	
+    <link rel="stylesheet" type="text/css" href="heizungStyle.css">
+ 
+</head>
+<body>
+    <div class="view">
+        <div class="popup" id="popup" hidden>
+            <div class="popup-title" id="popup-title">Room %NR%</div>
+            <div class="description">Zeitschema für diesen Raum auswählen</div>
+            <div class="popup-list">
+                <div class="popup-listitem" onclick="chooseSchema(0)">Schema 1</div>
+                <div class="popup-listitem" onclick="chooseSchema(1)">Schema 2</div>
+            </div>
+        </div>
+        <div class="title">Heizungs Schema</div>
+        <div class="content">
+            <div class="weekdayMenu">
+                <button class="weekdayBtn btn-active" id="day-0" onclick="changeDay(0)">Mo</button>
+                <button class="weekdayBtn" id="day-1" onclick="changeDay(1)">Di</button>
+                <button class="weekdayBtn" id="day-2" onclick="changeDay(2)">Mi</button>
+                <button class="weekdayBtn" id="day-3" onclick="changeDay(3)">Do</button>
+                <button class="weekdayBtn" id="day-4" onclick="changeDay(4)">Fr</button>
+                <button class="weekdayBtn" id="day-5" onclick="changeDay(5)">Sa</button>
+                <button class="weekdayBtn" id="day-6" onclick="changeDay(6)">So</button>
+            </div>
+            <div class="core-content">
+                <div class="spalte">
+                    <div class="room-item">
+                        <div class="room-title">Raum 1</div>
+                        <div class="time-list" id="room-1">
+
+                        </div>
+                        <button class="room-scheme-add" id="add-1" onclick="add(1)">+</button>
+                    </div>
+                    <div class="room-item">
+                        <div class="room-title">Raum 3</div>
+                        <div class="time-list" id="room-3">
+
+                        </div>
+                        <button class="room-scheme-add" id="add-3" onclick="add(3)">+</button>
+                    </div>
+                </div>
+                <div class="spalte-right">
+                    <div class="room-item">
+                        <div class="room-title">Raum 2</div>
+                        <div class="time-list" id="room-2">
+
+                        </div>
+                        <button class="room-scheme-add" id="add-2" onclick="add(2)">+</button>
+                    </div>
+                    <div class="room-item">
+                        <div class="room-title">Raum 4</div>
+                        <div class="time-list" id="room-4">
+
+                        </div>
+                        <button class="room-scheme-add" id="add-4" onclick="add(4)">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-menu">
+                <button class="bottom-button" onclick="window.location.href='heizung-main.html'">Speichern</button>
+                <button class="bottom-button" onclick="window.location.href='heizung-main.html'">Zurück</button>
+            </div>
+        </div>
+    </div>
+    <script src="heizungJs.js"></script>
+</body>
+</html>

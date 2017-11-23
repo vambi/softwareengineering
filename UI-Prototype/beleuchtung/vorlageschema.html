@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Zeitschema 1</title>
+</head>
+
+<body onload="fillSchema()">
+    <div class="content">
+        <div class="logo">Zeitschema Bsp</div>
+        <input type="text" class="name-input" placeholder="Name eingeben">
+        <div class="menu distancetop">
+            <div class="weekdays  nohover" id="weekdays">
+                <ul>
+                    <li id="MO" class="selectedli weekday" onclick="changeMO()">MO</li>
+                    <li id="DI" class="weekday" onclick="changeDI()">DI</li>
+                    <li id="MI" class="weekday" onclick="changeMI()">MI</li>
+                    <li id="DO" class="weekday" onclick="changeDO()">DO</li>
+                    <li id="FR" class="weekday" onclick="changeFR()">FR</li>
+                    <li id="SA" class="weekday" onclick="changeSA()">SA</li>
+                    <li id="SO" class="weekday" onclick="changeSO()">SO</li>
+                </ul>
+            </div>
+
+            <div class="dropdown" id="timestamps"></div>
+            <div class="menu-item-schema small" onclick="addTime()">+</div>
+            <div class="menu-item flow small " >
+                <div class="pseudobutton" onclick="linkZeitschema()">Einstellen</div>
+                <div class="pseudobutton" onclick="linkZeitschema()">Zurück</div>
+            </div>
+
+
+
+            <div class="dropdown time hidden">
+                <button onclick="dropdownmenuStunden(value)" id="stundenBtn" class="dropbtn time">00</button>
+                <div id="dropdownStunden" class="dropdown-content">
+                </div>
+            </div>
+            <div class="dropdown time hidden">
+                <button onclick="dropdownmenuMin(value)" id="minBtn" class="dropbtn">00</button>
+                <div id="dropdownMin" class="dropdown-content">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+html {
+    overflow: auto;
+}
+
+.content {
+    position: absolute;
+    background: linear-gradient(#c1c1c1, lightblue);
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    font-family: "calibri"
+}
+
+.logo {
+    position: fixed;
+    height: 150px;
+    line-height: 70px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: linear-gradient(to bottom, #57bff9, transparent);
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 5px black;
+}
+
+.menu {
+    position: absolute;
+    top: 150px;
+    left: 5vw;
+    width: 90vw;
+    height: 80%;
+}
+
+.menu-item-schema {
+    margin-left: 0px;
+    width: 90vw;
+    height: 18vw;
+    background-color: #57bff9;
+    line-height: 80px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    box-shadow: 4px 4px 10px grey;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.menu-item {
+    margin-left: 0px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    bottom: 10px;
+    width: 90vw;
+    height: 18vw;
+    background-color: #57bff9;
+    line-height: 80px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    box-shadow: 4px 4px 10px grey;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+
+.menu-list {
+    position: relative;
+    width: 90vw;
+    height: 20%;
+    background-color: white;
+    line-height: 80px;
+    font-size: 2vw;
+    font-weight: bold;
+    color: #57bff9;
+    box-shadow: 4px 4px 10px grey;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.menu-list-item {
+
+    width: 18vw;
+    height: 0px;
+    padding-top: 0vw;
+
+}
+
+.disabledtext {
+
+    width: 66vw;
+    background-color: white;
+    line-height: 40px;
+    font-size: calc(8px + 0.8vw);
+    font-weight: bold;
+    text-align: center;
+    color: #57bff9;
+    letter-spacing: 1px;
+    border: none;
+    height: 100%;
+
+
+}
+.uhrzeit{
+    
+    margin-right: 10vw;
+}
+
+.menu-list-item-small:hover {
+
+    background-color: white;
+    color: #57bff9;
+
+
+}
+.menu-list-item-small
+{
+    width: 2vw;
+}
+
+
+
+.nohover {
+    cursor: auto;
+}
+
+
+
+.white {
+    background-color: white;
+}
+
+.weekdays {
+
+    border: none;
+    width: 89vw;
+    padding-left: 1vw;
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0%;
+    height: 9vw;
+    background-color: #57bff9;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    box-shadow: 4px 4px 10px grey;
+    border-radius: 5px;
+    letter-spacing: 1px;
+
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.weekday {
+    float: left;
+    cursor: pointer;
+    width: 11vw;
+    font-size: calc(8px + 0.8vw);
+    padding-top: 3.5vw;
+    padding-bottom: 0;
+
+
+}
+
+.weekday:hover {
+    background-color: #006ca8;
+    height: 5.5vw;
+}
+
+
+.selectedli {
+    background-color: #006ca8;
+    height: 5.5vw;
+}
+
+div.hidden {
+    display: none;
+}
+
+
+
+.full {
+    font-size: calc(8px + 0.8vw);
+    width: 90vw;
+}
+
+.uhrzeit {
+    width: 10vw;
+}
+
+.beleuchtung{
+    margin-right: 10vw;
+}
+.time {
+    width: 10vw;
+}
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #57bff9;
+    color: white;
+    height: 100%;
+
+}
+
+.dropbtn {
+    background-color: white;
+    line-height: 60px;
+    font-size: calc(8px + 0.8vw);
+    font-weight: bold;
+    text-align: center;
+    color: #57bff9;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 90vw;
+    background-color: white;
+    color: #57bff9;
+    font-size: calc(8px + 0.8vw);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #57bff9;
+    max-height:15vw; overflow:auto;
+}
+
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content div:hover {
+    background-color: #57bff9;
+    color: white;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content div {
+    display: block;
+}
+
+.flow{
+    display: flex;
+}
+.small{
+    height:12vh;   
+}
+.pseudobutton:hover
+{
+    background-color: white;
+    color: #57bff9;
+    
+}
+.pseudobutton
+{
+    width: 45vw;
+    font-size: calc(8px + 0.8vw);
+    margin-top: 0px; 
+    position: relative;
+    
+}
+.pseudobuttonlarge
+{
+    width: 90vw;
+    font-size: calc(8px + 0.8vw);
+    margin-top: 2%; 
+    position: relative;
+    
+}
+.pseudobuttonlarge:hover
+{
+    background-color: white;
+    color: #57bff9;
+    
+}
+.distancetop{
+    top:180px;
+}
+
+.halfwidth{
+    width:44vw;
+}
+.nowhite{
+    border-color: #57bff9;
+    border-width: thin;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
+}
+
+.delete
+{
+    width:90vw;
+}
+.deletebtn
+{  
+    box-shadow: 0px px 0px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    line-height: 60px;
+    font-size: calc(8px + 0.8vw);
+    font-weight: bold;
+    text-align: center;
+    color: #57bff9;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width:10vw;
+    z-index: 2;
+}
+
+.name-input{
+    position: absolute;
+    top: 110px;
+    left: 20%;
+    width: 60%;
+    height: 50px;
+    font-size: 32px;
+}
